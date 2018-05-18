@@ -1214,7 +1214,7 @@ like.</p>
 appropriate locations <em>src/test/java</em> those tests will automatically
 be picked up and executed as unit tests. The plugin which is
 responsible for execution of those unit tests is the
-<a href="http://maven.apache.org/plugins/maven-surefire-plugin/">Maven Surefire Plugin</a>.</p>
+<a href="https://maven.apache.org/plugins/maven-surefire-plugin/">Maven Surefire Plugin</a>.</p>
 </div>
 <div class="paragraph">
 <p>Make an example output here&#8230;.</p>
@@ -1384,7 +1384,7 @@ how to prevent them.</p>
 <h2 id="_the_maven_assembly_plugin">The Maven Assembly Plugin</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The <a href="http://maven.apache.org/plugins/maven-assembly-plugin/">Maven Assembly Plugin</a> is especially created for such purposes to
+<p>The <a href="https://maven.apache.org/plugins/maven-assembly-plugin/">Maven Assembly Plugin</a> is especially created for such purposes to
 create any kind of archive type.</p>
 </div>
 <div class="sect2">
@@ -1393,11 +1393,11 @@ create any kind of archive type.</p>
 <p>One of the requirements you will often be confronted with is to create an
 archive which can simply be executed on command line. This is often called an
 <em>ueber-jar</em> or <em>fat-jar</em> (or Maven tongue: jar-with-dependencies).  This can simply be accomplished by
-using <a href="http://maven.apache.org/plugins/maven-assembly-plugin/">Maven Assembly Plugin</a>'s <a href="http://maven.apache.org/plugins/maven-assembly-plugin/descriptor-refs.html">pre-defined descriptors</a>.</p>
+using <a href="https://maven.apache.org/plugins/maven-assembly-plugin/">Maven Assembly Plugin</a>'s <a href="https://maven.apache.org/plugins/maven-assembly-plugin/descriptor-refs.html">pre-defined descriptors</a>.</p>
 </div>
 <div class="paragraph">
 <p>The following pom.xml example will give you an impression how the
-configuration for <a href="http://maven.apache.org/plugins/maven-assembly-plugin/">Maven Assembly Plugin</a> needs to look like to get
+configuration for <a href="https://maven.apache.org/plugins/maven-assembly-plugin/">Maven Assembly Plugin</a> needs to look like to get
 a <code>jar-with-dependencies</code>.</p>
 </div>
 <div class="listingblock">
@@ -1457,8 +1457,8 @@ jar which is named by using a classifier <code>jar-with-dependencies</code> to
 make it distinguishable from the other artifacts. The other aspect of
 this example project is that you can see how simple it is to create
 such an artifact. One thing which should be mentioned about the
-<a href="http://maven.apache.org/plugins/maven-assembly-plugin/">Maven Assembly Plugin</a>. It is not bound to any
-<a href="http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html">Build Life Cycle Phase</a> by default which means you need to bind it to
+<a href="https://maven.apache.org/plugins/maven-assembly-plugin/">Maven Assembly Plugin</a>. It is not bound to any
+<a href="https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html">Build Life Cycle Phase</a> by default which means you need to bind it to
 the life-cylce explicitly if you like to use it.</p>
 </div>
 <div class="paragraph">
@@ -1512,7 +1512,7 @@ the archive or not.</p>
 <div class="paragraph">
 <p>Create a jar with all dependencies which might be used to call simply java program as a command line
 tool.
-Alternatives <a href="http://maven.apache.org/plugins/maven-shade-plugin/">Maven Shade Plugin</a>.</p>
+Alternatives <a href="https://maven.apache.org/plugins/maven-shade-plugin/">Maven Shade Plugin</a>.</p>
 </div>
 <div class="paragraph">
 <p>You would like to create an distribution archive which contains the resulting components of your application.
@@ -1533,7 +1533,7 @@ mvn dependency:copy-dependencies -Dclassifier=sources -DoutputDirectory=target/s
 </div>
 <div class="paragraph">
 <p>Special requirements which you can fulfil with maven-assembly-plugin
-<a href="http://stackoverflow.com/questions/24311053/how-to-get-the-content-of-a-directory-inside-of-war-that-is-inside-of-an-ear-tha">http://stackoverflow.com/questions/24311053/how-to-get-the-content-of-a-directory-inside-of-war-that-is-inside-of-an-ear-tha</a></p>
+<a href="https://stackoverflow.com/questions/24311053/how-to-get-the-content-of-a-directory-inside-of-war-that-is-inside-of-an-ear-tha">https://stackoverflow.com/questions/24311053/how-to-get-the-content-of-a-directory-inside-of-war-that-is-inside-of-an-ear-tha</a></p>
 </div>
 </div>
 <div class="sect2">
@@ -1563,16 +1563,16 @@ You could use them in a very simple form.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><a href="http://maven.apache.org/plugins/maven-assembly-plugin/descriptor-refs.html#bin">bin</a></p>
+<p><a href="https://maven.apache.org/plugins/maven-assembly-plugin/descriptor-refs.html#bin">bin</a></p>
 </li>
 <li>
-<p><a href="http://maven.apache.org/plugins/maven-assembly-plugin/descriptor-refs.html#jar-with-dependencies">jar-with-dependencies</a></p>
+<p><a href="https://maven.apache.org/plugins/maven-assembly-plugin/descriptor-refs.html#jar-with-dependencies">jar-with-dependencies</a></p>
 </li>
 <li>
-<p><a href="http://maven.apache.org/plugins/maven-assembly-plugin/descriptor-refs.html#src">src</a></p>
+<p><a href="https://maven.apache.org/plugins/maven-assembly-plugin/descriptor-refs.html#src">src</a></p>
 </li>
 <li>
-<p><a href="http://maven.apache.org/plugins/maven-assembly-plugin/descriptor-refs.html#project">project</a></p>
+<p><a href="https://maven.apache.org/plugins/maven-assembly-plugin/descriptor-refs.html#project">project</a></p>
 </li>
 </ol>
 </div>
@@ -1589,7 +1589,7 @@ cause if you download Maven itself it&#8217;s a relative small archive
 (less than 8 <a href="http://en.wikipedia.org/wiki/Binary_prefix#Specific_units_of_IEC_60027-2_A.2_and_ISO.2FIEC_80000">MiB</a>) and Maven itself is more or less only a IoC
 container which supports the life-cycle and other small things. If you
 like to compile for example your source code this is provided by the
-<a href="http://maven.apache.org/plugins/maven-compiler-plugin/">Maven Compiler Plugin</a> with the appropriate functionality.</p>
+<a href="https://maven.apache.org/plugins/maven-compiler-plugin/">Maven Compiler Plugin</a> with the appropriate functionality.</p>
 </div>
 <div class="paragraph">
 <p>This chapter will give you an overview of the different areas of
@@ -1600,10 +1600,10 @@ usage within a Java project build.</p>
 <h3 id="_the_plugin_sources">The Plugin Sources</h3>
 <div class="paragraph">
 <p>In general there are two big sources of plugin. The first source is
-the area under the umbrella of the <a href="http://www.apache.org/">Apache Software Foundation</a>.
+the area under the umbrella of the <a href="https://www.apache.org/">Apache Software Foundation</a>.
 I will call them the <strong>Core Maven Plugins</strong>. The reason for this is that
-you will find plugins like <a href="http://maven.apache.org/plugins/maven-compiler-plugin/">Maven Compiler Plugin</a>,
-<a href="http://maven.apache.org/plugins/maven-jar-plugin/">Maven Jar Plugin</a> etc. in that area which provide the most basic
+you will find plugins like <a href="https://maven.apache.org/plugins/maven-compiler-plugin/">Maven Compiler Plugin</a>,
+<a href="https://maven.apache.org/plugins/maven-jar-plugin/">Maven Jar Plugin</a> etc. in that area which provide the most basic
 functionality for your build.</p>
 </div>
 <div class="paragraph">
@@ -1632,7 +1632,7 @@ Processor Plugin)</p>
 <div class="paragraph">
 <p>In this chapter we will take a look on more or less every plugin which
 is a participant of a usual Java build or to be more accurate a
-participant of the <a href="http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html">Build Life Cycle</a>.</p>
+participant of the <a href="https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html">Build Life Cycle</a>.</p>
 </div>
 <div class="paragraph">
 <p>The lifecycle contains already bindings for usual plugins so
@@ -1643,7 +1643,7 @@ in the majority of the cases its enough to build usual projects.</p>
 <div class="paragraph">
 <p>If you want to be sure your build will start from scratch you need to
 wipe out everything which has been created by previous operations or
-the build itself. So the <a href="http://maven.apache.org/plugins/maven-clean-plugin/">Maven Clean Plugin</a> is your friend
+the build itself. So the <a href="https://maven.apache.org/plugins/maven-clean-plugin/">Maven Clean Plugin</a> is your friend
 which will delete the <em>target</em> folder of your project or in every
 module in case of a multi-module build. This can be simply achieved by
 calling maven like this:</p>
@@ -1654,10 +1654,10 @@ calling maven like this:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Usualy you won&#8217;t ever think about the <a href="http://maven.apache.org/plugins/maven-clean-plugin/">Maven Clean Plugin</a>, cause
-by default it&#8217;s bound to the <em>clean</em> <a href="http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html">Build Life Cycle Phase</a> and there
+<p>Usualy you won&#8217;t ever think about the <a href="https://maven.apache.org/plugins/maven-clean-plugin/">Maven Clean Plugin</a>, cause
+by default it&#8217;s bound to the <em>clean</em> <a href="https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html">Build Life Cycle Phase</a> and there
 is no reason to change the configuration of the
-<a href="http://maven.apache.org/plugins/maven-clean-plugin/">Maven Clean Plugin</a> or something similar. In rare situations it
+<a href="https://maven.apache.org/plugins/maven-clean-plugin/">Maven Clean Plugin</a> or something similar. In rare situations it
 could happen that you need to change the configuration and add
 supplemental folders or files which should be deleted during a <em>mvn
 clean</em> call.</p>
@@ -1676,7 +1676,7 @@ clean</em> call.</p>
 files.  One of the most famous examples for this kind of
 configurations is one of those numerous logging frameworks like log4j,
 logback, log4j2 etc.  So the question is where to locate such
-configuration files? The <a href="http://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html">Default Folder Layout</a> gives you the
+configuration files? The <a href="https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html">Default Folder Layout</a> gives you the
 hint to put such things into <em>src/main/resources</em> which is of
 course intended for the production code (in other words which is
 packaged later into the jar file). Furthermore it is often the case as
@@ -1715,7 +1715,7 @@ the logging level or something else.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="http://maven.apache.org/plugins/maven-resources-plugin/">Maven Resources Plugin</a></p>
+<p><a href="https://maven.apache.org/plugins/maven-resources-plugin/">Maven Resources Plugin</a></p>
 </li>
 </ul>
 </div>
@@ -1730,7 +1730,7 @@ usable class files which can be used to run your application
 or to run your unit tests.</p>
 </div>
 <div class="paragraph">
-<p>This is the purpose of the <a href="http://maven.apache.org/plugins/maven-compiler-plugin/">Maven Compiler Plugin</a> which will
+<p>This is the purpose of the <a href="https://maven.apache.org/plugins/maven-compiler-plugin/">Maven Compiler Plugin</a> which will
 compile your source code into class files.</p>
 </div>
 <div class="paragraph">
@@ -1749,7 +1749,7 @@ jar file, cause if one of your unit tests will fail your build will
 fail and no packages are being built.</p>
 </div>
 <div class="paragraph">
-<p>For this purpose the <a href="http://maven.apache.org/plugins/maven-surefire-plugin/">Maven Surefire Plugin</a> is responsible
+<p>For this purpose the <a href="https://maven.apache.org/plugins/maven-surefire-plugin/">Maven Surefire Plugin</a> is responsible
 to run those unit tests.</p>
 </div>
 </div>
@@ -1763,7 +1763,7 @@ unit to be distributed.  The jar will contain only the files from
 tests will never be packed into jar files.</p>
 </div>
 <div class="paragraph">
-<p>The <a href="http://maven.apache.org/plugins/maven-jar-plugin/">Maven Jar Plugin</a> is bound to the <em>package</em> build life cycle
+<p>The <a href="https://maven.apache.org/plugins/maven-jar-plugin/">Maven Jar Plugin</a> is bound to the <em>package</em> build life cycle
 phase to create a jar file. This jar file contains only the files from
 the <em>src/main/java</em> inclusive the resources from <em>src/main/resources</em>
 area (Let use call it the production code area).</p>
@@ -1771,7 +1771,7 @@ area (Let use call it the production code area).</p>
 <div class="paragraph">
 <p>There exsist situations where you like to package your test code into
 a jar as well. This can be achieved by using the <code>test-jar</code> goal of the
-<a href="http://maven.apache.org/plugins/maven-jar-plugin/">Maven Jar Plugin</a>.</p>
+<a href="https://maven.apache.org/plugins/maven-jar-plugin/">Maven Jar Plugin</a>.</p>
 </div>
 <div class="paragraph">
 <p>See examples (testing with common code).</p>
@@ -1779,7 +1779,7 @@ a jar as well. This can be achieved by using the <code>test-jar</code> goal of t
 <div class="ulist">
 <ul>
 <li>
-<p><a href="http://maven.apache.org/plugins/maven-jar-plugin/">Maven Jar Plugin</a></p>
+<p><a href="https://maven.apache.org/plugins/maven-jar-plugin/">Maven Jar Plugin</a></p>
 <div class="paragraph">
 <p>Creating test-jars
 non transitive behaviour of test-jar artifact. Solution create a usual separate module.</p>
@@ -1793,7 +1793,7 @@ non transitive behaviour of test-jar artifact. Solution create a usual separate 
 <div class="paragraph">
 <p>After the jar archive has been created the archive can be installed into the local
 repository to be consumed by other projects on the same machine. For such a purpose
-the <a href="http://maven.apache.org/plugins/maven-install-plugin/">Maven Install Plugin</a> is responsible.</p>
+the <a href="https://maven.apache.org/plugins/maven-install-plugin/">Maven Install Plugin</a> is responsible.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1801,54 +1801,54 @@ the <a href="http://maven.apache.org/plugins/maven-install-plugin/">Maven Instal
 <div class="paragraph">
 <p>To break the limits of your machine you can distribute an jar archive to
 a remote repository which can be used by other users.
-For this the <a href="http://maven.apache.org/plugins/maven-deploy-plugin/">Maven Deploy Plugin</a>.</p>
+For this the <a href="https://maven.apache.org/plugins/maven-deploy-plugin/">Maven Deploy Plugin</a>.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="http://maven.apache.org/plugins/maven-war-plugin/">Maven WAR Plugin</a></p>
+<p><a href="https://maven.apache.org/plugins/maven-war-plugin/">Maven WAR Plugin</a></p>
 </li>
 <li>
-<p><a href="http://maven.apache.org/plugins/maven-ear-plugin/">Maven EAR Plugin</a></p>
+<p><a href="https://maven.apache.org/plugins/maven-ear-plugin/">Maven EAR Plugin</a></p>
 </li>
 <li>
-<p><a href="http://maven.apache.org/plugins/maven-ejb-plugin/">Maven EJB Plugin</a></p>
+<p><a href="https://maven.apache.org/plugins/maven-ejb-plugin/">Maven EJB Plugin</a></p>
 </li>
 <li>
-<p><a href="http://maven.apache.org/plugins/maven-shade-plugin/">Maven Shade Plugin</a></p>
+<p><a href="https://maven.apache.org/plugins/maven-shade-plugin/">Maven Shade Plugin</a></p>
 </li>
 <li>
-<p><a href="http://maven.apache.org/plugins/maven-deploy-plugin/">Maven Deploy Plugin</a></p>
+<p><a href="https://maven.apache.org/plugins/maven-deploy-plugin/">Maven Deploy Plugin</a></p>
 </li>
 <li>
-<p><a href="http://maven.apache.org/plugins/maven-install-plugin/">Maven Install Plugin</a></p>
+<p><a href="https://maven.apache.org/plugins/maven-install-plugin/">Maven Install Plugin</a></p>
 <div class="paragraph">
 <p>Idea and usage? Why?</p>
 </div>
 </li>
 <li>
-<p><a href="http://www.mojohaus.org/buildnumber-maven-plugin/">Mojo&#8217;s Buildnumber Maven Plugin</a></p>
+<p><a href="https://www.mojohaus.org/buildnumber-maven-plugin/">Mojo&#8217;s Buildnumber Maven Plugin</a></p>
 </li>
 <li>
-<p><a href="http://www.mojohaus.org/build-helper-maven-plugin/">Mojo&#8217;s Build Helper Maven Plugin</a></p>
+<p><a href="https://www.mojohaus.org/build-helper-maven-plugin/">Mojo&#8217;s Build Helper Maven Plugin</a></p>
 </li>
 <li>
-<p><a href="http://www.mojohaus.org/appassembler-maven-plugin">Mojo&#8217;s Appassembler Maven Plugin</a></p>
+<p><a href="https://www.mojohaus.org/appassembler-maven-plugin">Mojo&#8217;s Appassembler Maven Plugin</a></p>
 </li>
 <li>
 <p><a href="http://https://codehaus-cargo.github.io/cargo/Maven2+plugin.html">Mojo&#8217;s Cargo Maven 2 Plugin</a></p>
 </li>
 <li>
-<p><a href="http://www.mojohaus.org/exec-maven-plugin/">Mojo&#8217;s Exec Maven Plugin</a></p>
+<p><a href="https://www.mojohaus.org/exec-maven-plugin/">Mojo&#8217;s Exec Maven Plugin</a></p>
 </li>
 <li>
-<p><a href="http://www.mojohaus.org/sql-maven-plugin/">Mojo&#8217;s SQL Maven Plugin</a></p>
+<p><a href="https://www.mojohaus.org/sql-maven-plugin/">Mojo&#8217;s SQL Maven Plugin</a></p>
 </li>
 <li>
-<p><a href="http://www.mojohaus.org/templating-maven-plugin/">Mojo&#8217;s Templating Maven Plugin</a></p>
+<p><a href="https://www.mojohaus.org/templating-maven-plugin/">Mojo&#8217;s Templating Maven Plugin</a></p>
 </li>
 <li>
-<p><a href="http://www.mojohaus.org/version-maven-plugin/">Mojo&#8217;s Versions Maven Plugin</a></p>
+<p><a href="https://www.mojohaus.org/version-maven-plugin/">Mojo&#8217;s Versions Maven Plugin</a></p>
 </li>
 <li>
 <p>??ß</p>
@@ -1911,7 +1911,7 @@ and will likely result in later problems you should prevent.</p>
 <p>How can you force rules within in your build?  Sometimes it is not
 enough to suggest the best practice you need to force the best
 practices within a build. The tool to do so is the
-<a href="http://maven.apache.org/plugins/maven-enforcer-plugin/">Maven Enforcer Plugin</a>.</p>
+<a href="https://maven.apache.org/plugins/maven-enforcer-plugin/">Maven Enforcer Plugin</a>.</p>
 </div>
 <div class="paragraph">
 <p>One of the basic things is to force your build is built with the
@@ -2259,7 +2259,7 @@ Or you fill in a jira ticket..</p>
 <p>Testing</p>
 </div>
 <div class="paragraph">
-<p><a href="http://maven.apache.org/plugins/maven-invoker-plugin/">Maven Invoker Plugin</a>
+<p><a href="https://maven.apache.org/plugins/maven-invoker-plugin/">Maven Invoker Plugin</a>
 Folder structure</p>
 </div>
 <div class="paragraph">
@@ -2526,7 +2526,7 @@ of AsciiDoc labeled lists.</p>
 <div id="footer">
 <div id="footer-text">
 Version 0.0.5<br>
-Last updated 2018-05-18 23:00:28 CEST
+Last updated 2018-05-18 23:08:27 CEST
 </div>
 </div>
 </body>
